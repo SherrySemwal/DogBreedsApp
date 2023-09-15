@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DogInfoApplication</string>
+    <string name="network_error">No internet connection</string>
+    <string name="favourite">favourite</string>
+    <string name="subtypes">Subtypes :</string>
+    <string name="no_favorities">No favorites found</string>
+</resources>

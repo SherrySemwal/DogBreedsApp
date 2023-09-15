@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_dog_name"
+            style="@style/TextViewTitle"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/iv_dog_image"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@tools:sample/lorem" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_subtypes"
+            style="@style/TextViewSubtitle"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:gravity="start"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dog_name"
+            app:layout_constraintStart_toStartOf="@+id/tv_dog_name"
+            app:layout_constraintStart_toEndOf="@id/tv_dog_name"
+            android:text="@string/subtypes" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_subtypes_count"
+            style="@style/TextViewSubtitle"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="@id/tv_subtypes"
+            app:layout_constraintTop_toBottomOf="@+id/tv_subtypes"
+            app:layout_constraintStart_toEndOf="@+id/tv_subtypes"
+            app:layout_constraintBottom_toBottomOf="@id/tv_subtypes"
+            tools:text="0" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_dog_image"
+            style="@style/ImageView"
+            android:layout_width="@dimen/story_image_size"
+            android:layout_height="@dimen/story_image_size"
+            android:src="@drawable/ic_no_image"
+            android:transitionName="photo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_dog_name"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_fav"
+            style="@style/ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fav_selector_bg"
+            android:padding="@dimen/dimen_4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_delete"
+            style="@style/ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_24"
+            android:padding="@dimen/dimen_4"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

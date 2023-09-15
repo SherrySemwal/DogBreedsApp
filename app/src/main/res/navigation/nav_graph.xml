@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dogFragment">
+
+    <fragment
+        android:id="@+id/dogFragment"
+        android:name="com.sherry.dogapp.ui.dog_breed.DogBreedListFragment"
+        android:label="Dogs Breeds"
+        tools:layout="@layout/fragment_dog_breeds">
+        <action
+            android:id="@+id/action_dogFragment_to_dogBreedFavFragment"
+            app:destination="@id/dogBreedFavFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/dogBreedFavFragment"
+        android:name="com.sherry.dogapp.ui.fav.FavDogBreedListFragment"
+        android:label="Favourite Dog Breeds"
+        tools:layout="@layout/fragment_fav_dog_breed_list"/>
+</navigation>

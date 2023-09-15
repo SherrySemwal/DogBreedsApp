@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_0">0dp</dimen>
+    <dimen name="dimen_4">4dp</dimen>
+    <dimen name="dimen_6">6dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="story_image_size">80dp</dimen>
+    <dimen name="movie_sold_image_size">60dp</dimen>
+
+
+    <!--Text-->
+    <dimen name="txt_title">18sp</dimen>
+    <dimen name="txt_sub_title">14sp</dimen>
+</resources>
